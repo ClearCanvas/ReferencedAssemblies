@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "ClearCanvas.ImageViewer.Core.Functions"
+    </assembly>
+    <members>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection.ProjectOrthogonal(System.SByte*,System.SByte*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal maximum intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection.ProjectOrthogonal(System.Byte*,System.Byte*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal maximum intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection.ProjectOrthogonal(System.Int16*,System.Int16*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal maximum intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection.ProjectOrthogonal(System.UInt16*,System.UInt16*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal maximum intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection.ProjectOrthogonal(System.Int32*,System.Int32*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal maximum intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection.ProjectOrthogonal(System.UInt32*,System.UInt32*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal maximum intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection.ProjectOrthogonal(System.SByte*,System.SByte*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal maximum intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection.ProjectOrthogonal(System.Byte*,System.Byte*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal maximum intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection.ProjectOrthogonal(System.Int16*,System.Int16*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal maximum intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection.ProjectOrthogonal(System.UInt16*,System.UInt16*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal maximum intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection.ProjectOrthogonal(System.Int32*,System.Int32*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal maximum intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection.ProjectOrthogonal(System.UInt32*,System.UInt32*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal maximum intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="T:ClearCanvas.ImageViewer.Core.Functions.MaximumIntensityProjection">
+            <summary>
+Provides a collection of methods for performing maximum intensity projection.
+</summary>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection.ProjectOrthogonal(System.SByte*,System.SByte*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal average intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection.ProjectOrthogonal(System.Byte*,System.Byte*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal average intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection.ProjectOrthogonal(System.Int16*,System.Int16*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal average intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection.ProjectOrthogonal(System.UInt16*,System.UInt16*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal average intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection.ProjectOrthogonal(System.Int32*,System.Int32*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal average intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection.ProjectOrthogonal(System.UInt32*,System.UInt32*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal average intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection.ProjectOrthogonal(System.SByte*,System.SByte*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal average intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection.ProjectOrthogonal(System.Byte*,System.Byte*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal average intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection.ProjectOrthogonal(System.Int16*,System.Int16*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal average intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection.ProjectOrthogonal(System.UInt16*,System.UInt16*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal average intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection.ProjectOrthogonal(System.Int32*,System.Int32*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal average intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection.ProjectOrthogonal(System.UInt32*,System.UInt32*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal average intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="T:ClearCanvas.ImageViewer.Core.Functions.AverageIntensityProjection">
+            <summary>
+Provides a collection of methods for performing average intensity projection.
+</summary>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection.ProjectOrthogonal(System.SByte*,System.SByte*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal minimum intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection.ProjectOrthogonal(System.Byte*,System.Byte*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal minimum intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection.ProjectOrthogonal(System.Int16*,System.Int16*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal minimum intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection.ProjectOrthogonal(System.UInt16*,System.UInt16*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal minimum intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection.ProjectOrthogonal(System.Int32*,System.Int32*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal minimum intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection.ProjectOrthogonal(System.UInt32*,System.UInt32*,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal minimum intensity projection on a subregion of a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <remarks>
+This overload allows specifying a specific subregion of the slab to be projected, thus allowing for a large slab to be split up into multiple
+independent subregions that can be processed in parallel on multiple threads.
+</remarks>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+            <param name="blockOffset">The offset, in pixels, into each subsample at which the projection will begin.</param>
+            <param name="blockCount">The number of pixels to project for each subsample.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection.ProjectOrthogonal(System.SByte*,System.SByte*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal minimum intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection.ProjectOrthogonal(System.Byte*,System.Byte*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal minimum intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection.ProjectOrthogonal(System.Int16*,System.Int16*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal minimum intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection.ProjectOrthogonal(System.UInt16*,System.UInt16*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal minimum intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection.ProjectOrthogonal(System.Int32*,System.Int32*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal minimum intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="M:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection.ProjectOrthogonal(System.UInt32*,System.UInt32*,System.Int32,System.Int32)">
+            <summary>
+Performs orthogonal minimum intensity projection on a subsampled 3D volumetric slab, aggregating it into a single 2D planar image.
+</summary>
+            <param name="slabData">The 3D volumetric slab to be projected. (Length must be exactly <paramref name="subsamples" /> x <paramref name="pixelsPerSubsample" />).</param>
+            <param name="pixelData">Buffer to receive the output 2D planar image. (Length must be exactly <paramref name="pixelsPerSubsample" />).</param>
+            <param name="subsamples">The number of subsamples in the 3D volumetric slab.</param>
+            <param name="pixelsPerSubsample">The number of pixels per subsample in the 3D volumetric slab.</param>
+        </member>
+        <member name="T:ClearCanvas.ImageViewer.Core.Functions.MinimumIntensityProjection">
+            <summary>
+Provides a collection of methods for performing minimum intensity projection.
+</summary>
+        </member>
+    </members>
+</doc>
